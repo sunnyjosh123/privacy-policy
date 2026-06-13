@@ -12,17 +12,20 @@
 </head>
 <body>
 <h1>FlowEye Privacy Policy</h1>
-<p><strong>Effective Date:</strong> March 2026 &nbsp;|&nbsp; <strong>App:</strong> FlowEye (com.eyeguard.app)</p>
+<p><strong>Effective Date:</strong> June 2026 &nbsp;|&nbsp; <strong>App:</strong> FlowEye (com.eyeguard.app)</p>
 
 <h2>1. Overview</h2>
-<p>FlowEye is designed with privacy as a core principle. We do not collect, store, or transmit any personal data from your device. All AI processing happens entirely on your iPhone.</p>
+<p>FlowEye is designed with privacy as a core principle. We do not collect, store, or transmit personal face data from your device. Camera processing happens entirely on your iPhone.</p>
 
-<h2>2. Camera Usage</h2>
-<p>FlowEye uses your iPhone's front-facing camera exclusively to detect facial landmarks for eye tracking. This is performed in real time using Google MediaPipe on-device AI. <strong>No video frames are recorded, saved, or sent to any server.</strong> Camera access is only active while you are using the Eye Care, Exercise, or Rest features within the app.</p>
+<h2>2. Face Data and Camera Processing</h2>
+<p>FlowEye uses your iPhone's front-facing camera exclusively to process face landmarks on-device for eye care features. The app may temporarily process camera frames and derived facial landmarks in device memory to estimate blink rate, eye openness, approximate gaze direction, device distance/posture alerts, rest timer completion, and guided exercise completion.</p>
+<p><strong>FlowEye does not record, save, retain, upload, or share video frames, photos, facial landmarks, face geometry, face templates, or face identity data.</strong> Face data is processed only in real time while you are actively using the Eye Care, Exercise, or Rest features, and is discarded immediately after each frame is analyzed.</p>
+<p>FlowEye does not use face data for identification, authentication, advertising, user profiling, emotion recognition, or tracking across apps or websites.</p>
 
 <h2>3. Data We Do NOT Collect</h2>
 <ul>
   <li>No video or images</li>
+  <li>No stored face data, face landmarks, face templates, or face identity data</li>
   <li>No location data</li>
   <li>No advertising identifiers (IDFA)</li>
   <li>No analytics or usage telemetry</li>
@@ -33,7 +36,7 @@
 <h2>4. Data Stored Locally on Your Device</h2>
 <p>The following data is stored only on your iPhone and is never transmitted:</p>
 <ul>
-  <li><strong>Eye session records</strong> — duration, blink count, fatigue score (stored in Core Data / SQLite)</li>
+  <li><strong>Eye session records</strong> — duration, blink count, strain score, rest count, and posture alert count (stored in Core Data / SQLite). These records are summary values only and do not include images, video, facial landmarks, or face templates.</li>
   <li><strong>App settings</strong> — reminder intervals, notification preferences (stored in UserDefaults)</li>
   <li><strong>Account info</strong> (optional) — your Sign in with Apple user ID or email address, used only to identify your account locally. No backend server stores this data.</li>
   <li><strong>Purchase status</strong> — whether you have purchased FlowEye Pro (stored in UserDefaults and verified via Apple StoreKit 2)</li>
@@ -44,21 +47,27 @@
 
 <h2>6. Third-Party SDKs</h2>
 <ul>
-  <li><strong>Google MediaPipe Tasks Vision</strong> — runs entirely on-device. No data is sent to Google.</li>
+  <li><strong>Google MediaPipe Tasks Vision</strong> — a bundled on-device library used for face landmark processing. It runs locally on your device. No camera frames, face data, facial landmarks, or user data are sent to Google.</li>
   <li><strong>Apple StoreKit 2</strong> — communicates with Apple servers only for purchase verification.</li>
   <li><strong>Apple AuthenticationServices</strong> — Sign in with Apple is managed by Apple's own privacy framework.</li>
 </ul>
 
-<h2>7. Children's Privacy</h2>
+<h2>7. Third-Party AI Services</h2>
+<p>FlowEye does not send user data, camera frames, face data, facial landmarks, eye care metrics, or health-related information to any third-party AI service. All camera-based analysis is performed locally on the device.</p>
+
+<h2>8. Children's Privacy</h2>
 <p>FlowEye is rated 4+ and is safe for all ages. We do not knowingly collect any personal information from children.</p>
 
-<h2>8. Data Deletion</h2>
+<h2>9. Data Deletion</h2>
 <p>To delete all data stored by FlowEye, simply delete the app from your iPhone. Go to <em>Settings → General → iPhone Storage → FlowEye → Delete App</em>.</p>
 
-<h2>9. Contact</h2>
+<h2>10. Medical Disclaimer</h2>
+<p>FlowEye is a wellness and habit-tracking app, not a medical device. It does not diagnose, treat, cure, or prevent any disease or medical condition, and it is not a substitute for professional medical advice. Please consult a doctor or qualified eye care professional in addition to using this app and before making any medical decisions.</p>
+
+<h2>11. Contact</h2>
 <p>If you have questions about this privacy policy, please contact us at: <a href="mailto:privacy@floweye.app">privacy@floweye.app</a></p>
 
-<h2>10. Changes to This Policy</h2>
+<h2>12. Changes to This Policy</h2>
 <p>We may update this privacy policy from time to time. Any changes will be posted on this page with an updated effective date.</p>
 
 <hr>
